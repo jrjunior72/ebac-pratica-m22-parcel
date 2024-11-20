@@ -1,11 +1,21 @@
 {
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.0",
-    "parcel": "^2.13.0"
-  },
   "name": "codes",
   "version": "1.0.0",
-  "dependencies": {
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/styles.scss src/scripts/script.js",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.12.0",
+    "sharp": "^0.31.2"
+  },
+    "dependencies": {
     "ansi-styles": "^4.3.0",
     "argparse": "^2.0.1",
     "base-x": "^3.0.10",
@@ -14,6 +24,7 @@
     "callsites": "^3.1.0",
     "caniuse-lite": "^1.0.30001680",
     "chalk": "^4.1.2",
+    "chokidar": "^4.0.1",
     "chrome-trace-event": "^1.0.4",
     "clone": "^2.1.2",
     "color-convert": "^2.0.1",
@@ -38,6 +49,7 @@
     "has-flag": "^4.0.0",
     "htmlnano": "^2.1.1",
     "htmlparser2": "^9.1.0",
+    "immutable": "^5.0.2",
     "import-fresh": "^3.3.0",
     "is-arrayish": "^0.2.1",
     "is-extglob": "^2.1.1",
@@ -70,10 +82,13 @@
     "posthtml-render": "^3.0.0",
     "react-error-overlay": "^6.0.9",
     "react-refresh": "^0.14.2",
+    "readdirp": "^4.0.2",
     "regenerator-runtime": "^0.14.1",
     "resolve-from": "^4.0.0",
     "safe-buffer": "^5.2.1",
+    "sass": "^1.81.0",
     "semver": "^7.6.3",
+    "source-map-js": "^1.2.1",
     "srcset": "^5.0.1",
     "supports-color": "^7.2.0",
     "term-size": "^2.2.1",
@@ -84,14 +99,5 @@
     "update-browserslist-db": "^1.1.1",
     "utility-types": "^3.11.0",
     "weak-lru-cache": "^1.2.2"
-  },
-  "scripts": {
-    "dev": "parcel src/index.html src/styles/styles.scss src/scripts/script.js",
-    "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
